@@ -1,0 +1,68 @@
+ body {
+     background-color: rgb(235, 232, 238);
+ }
+
+ a {
+     color: mediumpurple;
+ }
+
+ .container {
+     margin: 120px auto;
+     max-width: 500px;
+ }
+
+ header {
+     margin-bottom: 10px;
+ }
+
+ h1 {
+     font-size: 30px;
+     font-weight: 900;
+     text-align: center;
+     line-height: 1.5;
+     color: #272844;
+ }
+
+ form {
+     padding: 30px;
+     background-color: rgb(243, 247, 250);
+     border-radius: 10px;
+     display: flex;
+     box-shadow: #74748c;
+ }
+
+ .info {
+     padding: 15px;
+     font-size: 16px;
+     line-height: 20px;
+     border: 1px solid rgba(190, 196, 200, 0.859);
+     border-radius: 50px;
+     color: antiquewhite;
+ }
+
+ .button {
+     margin-left: 10px;
+     background-color: mediumpurple;
+     color: white;
+     border: none;
+     padding: 14px, 24px;
+     border-radius: 50px;
+     width: 140px;
+     font-size: 16px;
+ }
+
+ .poem {
+     padding: 20px;
+     line-height: 3;
+     background-color: #fff;
+     font-size: 18px;
+     box-shadow: #272844;
+     border-radius: 10px;
+     border-left: 3px solid mediumpurple;
+ }
+
+ footer {
+     text-align: center;
+     font-size: 13px;
+     margin: 30px;
+ }
