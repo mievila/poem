@@ -64,6 +64,10 @@
      border-left: 3px solid mediumpurple;
  }
 
+ .poem strong {
+     color: mediumpurple;
+ }
+
  footer {
      text-align: center;
      font-size: 13px;
