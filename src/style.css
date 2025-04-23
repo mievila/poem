@@ -24,13 +24,23 @@
      color: #272844;
  }
 
- form {
-     padding: 30px;
-     background-color: rgb(243, 247, 250);
+ .form-container {
+     padding: 15px 20px;
+     background-color: white;
      border-radius: 10px;
-     display: flex;
-     box-shadow: #74748c;
+     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
      margin-bottom: 30px;
+ }
+
+ form {
+     display: flex;
+ }
+
+ .hint {
+     line-height: 1.5;
+     margin-top: 5px;
+     font-size: 12px;
+     opacity: 0.5;
  }
 
  .info {
@@ -59,9 +69,13 @@
      line-height: 3;
      background-color: #fff;
      font-size: 14px;
-     box-shadow: #272844;
+     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
      border-radius: 10px;
      border-left: 3px solid mediumpurple;
+ }
+
+ .hidden {
+     display: none;
  }
 
  .poem strong {
@@ -72,4 +86,21 @@
      text-align: center;
      font-size: 13px;
      margin: 30px;
+ }
+
+
+ .generating {
+     animation: blink-animation 1s steps(5, start) infinite;
+ }
+
+ @keyframes blink-animation {
+     to {
+         visibility: hidden;
+     }
+ }
+
+ @-webkit-keyframes blink-animation {
+     to {
+         visibility: hidden;
+     }
  }

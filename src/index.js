@@ -22,13 +22,14 @@ Make sure to follow the user instructions. Do not include a title. Sign the poem
 
     let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${encodeURIComponent(prompt)}&context=${encodeURIComponent(context)}&key=${apiKey}`;
 
+    let poemElement = document.querySelector("#poem");
+    poemElement.classList.remove("hidden");
+    document.querySelector("#poem").innerHTML = `<div class="generating">⌛Generating your intresting poem about ${instructionsInput.value}</div>`;
 
     console.log("Generating poem");
     console.log(`Prompt: ${prompt}`);
     console.log(`Context: ${context}`);
 
-
-    document.querySelector("#poem").innerHTML = "Generating your poem...";
 
     axios
         .get(apiURL)
